@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { soapOffer } from "../details";
-import offerslide from '../assets/offerslide.png'
+import offerslide from "../assets/offerslide.png";
+
 
 const Offer = () => {
+ 
   return (
-    <div >
-     <div>
+    <div>
+      {/* <div>
         <img className="h-[50vh] object-cover sm:h-auto" src={offerslide} alt="" />
-     </div>
-      
+     </div> */}
+
+     
     </div>
   );
 };

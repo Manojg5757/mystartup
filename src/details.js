@@ -568,7 +568,7 @@ export const soapOffer = [
         category: "soap",
         image: mayagreen,
         weightType:"gram"
-      },
+      }, 
 
     
 ]

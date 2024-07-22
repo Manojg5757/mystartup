@@ -11,28 +11,7 @@ import { useSelector } from "react-redux";
 const Home = () => {
   const toggle = useSelector((state) => state.product);
   return (
-    <div className="bg-gradient-to-r from-cyan-300 to-blue-400 h-[70vh]">
-      <div className="h-[100%] relative flex flex-col sm:flex-row items-center max-w-6xl mx-auto p-3">
-        <div className=" sm:w-[50%] h-[50%]">
-          <img className="h-full" src={grocery} alt="" />
-        </div>
-        <div className="flex flex-col gap-3 justify-center sm:w-[50%] h-[50%]">
-          <h1 className="text-4xl font-bold text-white">
-            {" "}
-            {toggle ? "Best at One Place" : "விலையும் தரமும்"}
-          </h1>
-          <p className="indent-4 flex items-center gap-1">
-            {toggle ? "Save and Shop with Us" : "வாங்க வாங்குங்க"}
-            <GiShoppingCart className="" />
-          </p>
-        </div>
-        <img
-          src={fruits}
-          className="h-[30%] absolute bottom-0 right-0"
-          alt=""
-        />
-      </div>
-
+    <div>
       <div className="flex justify-center gap-4 flex-wrap max-w-6xl mx-auto my-3 p-3">
         <div className="bg-green-300 relative rounded-lg w-[350px] h-[200px]">
           <div className="flex flex-col gap-4 justify-center absolute bottom-0 top-0 my-auto left-[20%]">
@@ -86,8 +65,8 @@ const Home = () => {
         {
           soapOffer.map((product)=>{
             return(
-              <div className="shadow-lg rounded-lg overflow-hidden">
-                <img className="h-[140px]" src={product.image} alt="" />
+              <div className="shadow-lg rounded-lg overflow-hidden sm:p-3">
+                <img className="h-[140px] sm:h-[200px] sm:rounded-lg" src={product.image} alt="" />
                 <div className="flex flex-col gap-2  py-2">
                   <p className="font-semibold">{toggle ? product.title : product.titleTamil}</p>
                   <p>{toggle ? "Weight" : "எடை"}:{product.weight}<sub>{product.weightType === "gram" ? (toggle ? "Gram" : "கிராம்") : ""}</sub> </p>

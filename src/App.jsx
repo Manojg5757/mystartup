@@ -7,12 +7,13 @@ import Store from './pages/Store'
 import Navbar from './components/Navbar'
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import Footer from './components/Footer'
+import Slider from './components/Slider'
 
 const App = () => {
   return (
     <BrowserRouter>
     <Navbar  />
-    
+    <Slider />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/store' element={<Store />} />
