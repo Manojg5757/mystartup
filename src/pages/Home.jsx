@@ -18,7 +18,7 @@ const Home = () => {
 
       {/* video */}
       <div className="h-[180px] sm:hidden mt-2">
-        <video className="h-full object-cover" src={videoad} autoPlay muted loop/>
+        <video className="h-full w-full object-cover" src={videoad} autoPlay muted loop/>
       </div>
       
 
@@ -27,7 +27,7 @@ const Home = () => {
         <div className="flex flex-wrap gap-2 justify-center">
           {soapOffer.map((product) => {
             return (
-              <div className="shadow-lg rounded-lg overflow-hidden sm:p-3">
+              <div key={product.id} className="shadow-lg rounded-lg overflow-hidden sm:p-3">
                 <img
                   className="h-[180px] sm:h-[200px] sm:rounded-lg"
                   src={product.image}

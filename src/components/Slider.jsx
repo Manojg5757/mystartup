@@ -94,7 +94,7 @@ const Slider = () => {
         }}
       >
         {slider.map((item, index) => {
-          return <img className="w-full  object-cover sm:h-auto" src={toggle ? item.image : (item.imageTamil ? item.imageTamil : item.image)} alt="" />;
+          return <img key={index} className="w-full  object-cover sm:h-auto" src={toggle ? item.image : (item.imageTamil ? item.imageTamil : item.image)} alt="" />;
         })}
       </div>
     </div>

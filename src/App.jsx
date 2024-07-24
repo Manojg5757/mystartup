@@ -8,12 +8,14 @@ import Navbar from './components/Navbar'
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import Footer from './components/Footer'
 import Slider from './components/Slider'
+import BigScreenSlider from './components/BigScreenSlider'
 
 const App = () => {
   return (
     <BrowserRouter>
     <Navbar  />
     <Slider />
+    <BigScreenSlider />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/store' element={<Store />} />

@@ -39,6 +39,10 @@ import mayagreen from "./assets/mayagreen.png";
 import mayablue from "./assets/mayablue.png";
 import arisi from "./assets/arisi.png";
 import arasan from "./assets/arasan.png";
+import lifebuoy from './assets/lifebuoy.png'
+import hamam from './assets/hamam.png'
+import surfexcel from './assets/surfexcel.png'
+import cinthol from './assets/cinthol.png'
 
 const sliderDetails = [
   {
@@ -568,7 +572,59 @@ export const soapOffer = [
         category: "soap",
         image: mayagreen,
         weightType:"gram"
+      },
+      {
+        id: 5,
+        title: "SurfExcel",
+        titleTamil: "சர்ப் எக்சல்",
+        brand: "Surfexcel",
+        weight: null,
+        mrp: 35,
+        regularPrice: null,
+        offerPrice: 34,
+        category: "soap",
+        image: surfexcel,
+        weightType:"gram"
+      },  
+      {
+        id: 6,
+        title: "LifeBuoy",
+        titleTamil: "லைஃபாய்",
+        brand: "Lifebuoy",
+        weight: null,
+        mrp: 36,
+        regularPrice: null,
+        offerPrice: 35,
+        category: "soap",
+        image: lifebuoy,
+        weightType:"gram"
+      },  
+      {
+        id: 7,
+        title: "Hamam",
+        titleTamil: "ஹமாம்",
+        brand: "Hamam",
+        weight: null,
+        mrp: 36,
+        regularPrice: null,
+        offerPrice: 35,
+        category: "soap",
+        image: hamam,
+        weightType:"gram"
       }, 
+      {
+        id: 8,
+        title: "Cinthol",
+        titleTamil: "ஹமாம்",
+        brand: "Cinthol",
+        weight: null,
+        mrp: 48,
+        regularPrice: null,
+        offerPrice: 47,
+        category: "soap",
+        image: cinthol,
+        weightType:"gram"
+      },  
 
     
 ]
