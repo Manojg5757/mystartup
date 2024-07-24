@@ -1,30 +1,47 @@
 import React, { useEffect, useState } from 'react'
-import one from "../assets/1.png";
-import two from "../assets/2.png";
-import three from "../assets/3.png";
-import four from "../assets/4.png";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import welcome from '../assets/welcome.png'
+import welcomeTamil from '../assets/welcometamil.png'
+import agency from '../assets/agency.png'
+import agencyTamil from '../assets/agencytamil.png'
+import bulkorders from '../assets/bulkorders.png'
+import bulkTamil from '../assets/bulktamil.png'
+import goatSale from '../assets/goatsale.png'
+import ad from '../assets/ad.png'
+import adTamil from '../assets/adtamil.png'
+import { useSelector } from 'react-redux';
+
 
 const Slider = () => {
+    const toggle = useSelector((state) => state.product);
     const [currentSlide, setCurrentSlide] = useState(0);
     const [direction, setDirection] = useState("next");
     const slider = [
       {
         id: 1,
-        image: one,
+        image: welcome,
+        imageTamil:welcomeTamil
       },
       {
         id: 2,
-        image: two,
+        image: bulkorders,
+        imageTamil:bulkTamil
       },
       {
         id: 3,
-        image: three,
+        image: goatSale,
+        imageTamil:null
       },
       {
         id: 4,
-        image: four,
+        image: agency,
+        imageTamil:agencyTamil
+      },
+      {
+        id: 5,
+        image: ad,
+        imageTamil:adTamil
       },
     ];
   
@@ -77,7 +94,7 @@ const Slider = () => {
         }}
       >
         {slider.map((item, index) => {
-          return <img className="w-full h-auto" src={item.image} alt="" />;
+          return <img className="w-full  object-cover sm:h-auto" src={toggle ? item.image : (item.imageTamil ? item.imageTamil : item.image)} alt="" />;
         })}
       </div>
     </div>

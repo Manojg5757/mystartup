@@ -10,7 +10,7 @@ const Offer = () => {
       {/* <div>
         <img className="h-[50vh] object-cover sm:h-auto" src={offerslide} alt="" />
      </div> */}
-
+    
      
     </div>
   );
