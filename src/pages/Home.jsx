@@ -50,7 +50,7 @@ const Home = () => {
                   <div>
                     {product.offerPrice ? (
                       <div className="flex gap-2 items-center">
-                        <p className="text-[10px]">
+                        <p className="text-sm">
                           mrp:
                           <span className=" line-through">₹{product.mrp}</span>
                         </p>
@@ -59,7 +59,7 @@ const Home = () => {
                         </p>
                       </div>
                     ) : (
-                      <p className="bg-green-400 rounded-2xl text-[12px] w-fit px-1 py-2">
+                      <p className="bg-green-400 rounded-2xl text-[12px] w-fit px-3 py-1">
                         {product.weight}
                         {toggle ? "gram at just" : "கிராம் வெறும்"} ₹
                         {product.mrp}
