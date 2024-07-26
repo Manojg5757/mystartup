@@ -23,7 +23,7 @@ const Home = () => {
       
 
       <div className="max-w-6xl mx-auto p-3  ">
-     
+         <h1 className="text-center mb-4 text-lg font-semibold text-blue-600">{toggle ? "Best Deals for You" : "சிறந்த சலுகைகள்"}</h1>
         <div className="flex flex-wrap gap-2 justify-center">
           {soapOffer.map((product) => {
             return (
