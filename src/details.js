@@ -43,6 +43,12 @@ import lifebuoy from './assets/lifebuoy.png'
 import hamam from './assets/hamam.png'
 import surfexcel from './assets/surfexcel.png'
 import cinthol from './assets/cinthol.png'
+import moong from './assets/moong.png'
+import pottukadalai from './assets/pottukadalai.png'
+import groundnut from './assets/groundnut.png'
+import eggbasket from './assets/eggbasket.png'
+import tea from './assets/tea.png'
+import brownsugar from './assets/brownsugar.png'
 
 const sliderDetails = [
   {
@@ -615,7 +621,7 @@ export const soapOffer = [
       {
         id: 8,
         title: "Cinthol",
-        titleTamil: "ஹமாம்",
+        titleTamil: "சின்தால்",
         brand: "Cinthol",
         weight: null,
         mrp: 48,
@@ -627,6 +633,152 @@ export const soapOffer = [
       },  
 
     
+]
+
+export const essentialOffers = [
+  {
+    id: 1,
+    title: "Samba Ravai",
+    titleTamil: "சம்பா ரவை",
+    brand: "Mayil",
+    weight: 1,
+    mrp: 95,
+    regularPrice: 150,
+    offerPrice: 135,
+    category: "flour",
+    image: sambaravai,
+    weightType:"kg"
+  },  
+  {
+    id: 2,
+    title: "Wheat Flour",
+    titleTamil: "கோதுமை மாவு",
+    brand: "Assirvad",
+    weight: 1,
+    mrp: 37,
+    regularPrice: 67,
+    offerPrice: null,
+    category: "flour",
+    image: wheatflour,
+    weightType:"kg"
+  },
+  {
+    id: 3,
+    title: "Paasi payaru",
+    titleTamil: "பாசிப்பயிறு",
+    brand: "parrupu", 
+    weight: 1,
+    mrp: null,
+    regularPrice: 150,
+    offerPrice: 135,
+    category: "essentials",
+    image: moong,
+    weightType:"kg"
+  },
+  {
+    id: 4,
+    title: "Chutney Kdalai",
+    titleTamil: "சட்னி கடலை",
+    brand: "parrupu",
+    weight: 1,
+    mrp: null,
+    regularPrice: 35,
+    offerPrice: null,
+    category: "essentials",
+    image: pottukadalai,
+    weightType:"kg"
+  },
+  {
+    id: 5,
+    title: "Ground nut",
+    titleTamil: "வேர்கடலை",
+    brand: "parrupu",
+    weight: 1,
+    mrp: null,
+    regularPrice:200,
+    offerPrice: 185,
+    category: "essentials", 
+    image: groundnut,
+    weightType:"kg"
+  },
+  {
+    id: 6,
+    title: "Malli",
+    titleTamil: "மல்லி",
+    brand: "P.S",
+    weight: 250,
+    mrp: null,
+    regularPrice:200,
+    offerPrice: 190,
+    category: "essentials", 
+    image: malli,
+    weightType:"gram"
+  },
+  {
+    id: 7,
+    title: "Mustard",
+    titleTamil: "கடுகு",
+    weight: 100,
+    brand: "Mustard",
+    mrp: null,
+    regularPrice: 20,
+    offerPrice: 15,
+    category: "essentials",
+    image: mustard,
+    weightType:"gram"
+  },
+  {
+    id: 8,
+    title: "Vendhayam",
+    titleTamil: "வெந்தயம்",
+    weight: 100,
+    brand: "Vendhayam",
+    mrp: null,
+    regularPrice: 20,
+    offerPrice: 15,
+    category: "essentials",
+    image: vendhayam,
+    weightType:"gram"
+  },
+  {
+    id: 9,
+    title: "Egg",
+    titleTamil: "முட்டை",
+    weight: null,
+    brand: "egg",
+    mrp: null,
+    regularPrice: 7,
+    offerPrice: 6,
+    category: "essentials",
+    image: eggbasket,
+    weightType:"count"
+  },
+  {
+    id: 10,
+    title: "3roses",
+    titleTamil: "3 ரோசஸ்",
+    weight: null,
+    brand: "3roses",
+    mrp: 700,
+    regularPrice: null,
+    offerPrice: 690,
+    category: "essentials",
+    image: tea,
+    weightType:"kg"
+  },
+  {
+    id: 11,
+    title: "Brown Sugar",
+    titleTamil: "கரும்பு சர்க்கரை",
+    weight: null,
+    brand: "sugar",
+    mrp: null,
+    regularPrice: 70,
+    offerPrice: 65,
+    category: "essentials",
+    image: brownsugar,
+    weightType:"kg"
+  },
 ]
 
 export default sliderDetails;

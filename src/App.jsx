@@ -9,6 +9,7 @@ import { FaArrowAltCircleUp } from "react-icons/fa";
 import Footer from './components/Footer'
 import Slider from './components/Slider'
 import BigScreenSlider from './components/BigScreenSlider'
+import MoveToTop from './components/MoveToTop'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path='/offer' element={<Offer />} />
       </Routes>
       <Footer />
+      <MoveToTop />
     </BrowserRouter>
   )
 }

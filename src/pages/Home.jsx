@@ -5,7 +5,7 @@ import sprite from "../assets/sprite.png";
 import stationary from "../assets/stationary.png";
 import rice from "../assets/rice.png";
 import { GiShoppingCart } from "react-icons/gi";
-import sliderDetails, { soapOffer } from "../details";
+import sliderDetails, { essentialOffers, soapOffer } from "../details";
 import { useSelector } from "react-redux";
 import videoad from '../assets/videoad.mp4'
 
@@ -24,7 +24,48 @@ const Home = () => {
 
       <div className="max-w-6xl mx-auto p-3  ">
          <h1 className="text-center mb-4 text-lg font-semibold text-blue-600">{toggle ? "Best Deals for You" : "சிறந்த சலுகைகள்"}</h1>
+         <h1 className="my-4 font-semibold">{toggle ? "Kitchen Essentials" : "சமையல் அறை"}</h1>
         <div className="flex flex-wrap gap-2 justify-center">
+          
+          {essentialOffers.map((product) => {
+            return (
+              <div key={product.id} className="shadow-lg rounded-lg overflow-hidden sm:p-3">
+                <img
+                  className="h-[180px] sm:h-[200px] sm:rounded-lg"
+                  src={product.image}
+                  alt=""
+                />
+                <div className="flex flex-col gap-2  py-2">
+                  <p className="font-semibold">
+                    {toggle ? product.title : product.titleTamil}
+                  </p>
+                  
+                  <div>
+                    {product.offerPrice ? (
+                      <div className="flex gap-2 items-center">
+                        {/* <p className="text-sm">
+                          mrp:
+                          <span className=" line-through">₹{product.mrp}</span>
+                        </p> */}
+                        <p className="bg-green-400 rounded-2xl text-[12px] w-fit px-3 py-1">
+                          {product.weight}{product.weightType === 'gram' ? (toggle ? "gram" : "கிராம்") : product.weightType === 'kg' ? (toggle ? "Kg" :"கிலோ" ) : (toggle ? "Piece" : "ஒன்று")} ₹{product.offerPrice}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="bg-green-400 rounded-2xl text-[12px] w-fit px-3 py-1">
+                        {product.weight}
+                        {toggle ? `${product.weightType} at just` : (product.weightType === 'gram' ? "கிராம்" : "கிலோ")} ₹
+                        {product.mrp}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <h1 className="my-4 font-semibold">{toggle ? "Soap and Detergent" : "சோப்பு மற்றும் டிடர்ஜென்ட்" }</h1>
+        <div className="flex flex-wrap gap-2  justify-center">
           {soapOffer.map((product) => {
             return (
               <div key={product.id} className="shadow-lg rounded-lg overflow-hidden sm:p-3">
@@ -37,16 +78,7 @@ const Home = () => {
                   <p className="font-semibold">
                     {toggle ? product.title : product.titleTamil}
                   </p>
-                  {/* <p>
-                    {toggle ? "Weight" : "எடை"}:{product.weight}
-                    <sub>
-                      {product.weightType === "gram"
-                        ? toggle
-                          ? "Gram"
-                          : "கிராம்"
-                        : ""}
-                    </sub>{" "}
-                  </p> */}
+                  
                   <div>
                     {product.offerPrice ? (
                       <div className="flex gap-2 items-center">
@@ -55,7 +87,7 @@ const Home = () => {
                           <span className=" line-through">₹{product.mrp}</span>
                         </p>
                         <p className="bg-green-400 rounded-2xl text-[12px] w-fit px-3 py-1">
-                          offer:₹{product.offerPrice}
+                          {product.weight}{toggle ? product.weightType : (product.weightType === 'gram' ? "கிராம்" :"கிலோ")} ₹{product.offerPrice}
                         </p>
                       </div>
                     ) : (

@@ -52,7 +52,7 @@ const Navbar = () => {
             <Link to="/store">{languageTitle ? "Store" : "கடை"}</Link>
           </li>
           <li>
-            <Link to="/offer">{languageTitle ? "Offer" : "சலுகை"}</Link>
+            <Link to="/offer">{languageTitle ? "Drop" : "டிராப்"}</Link>
           </li>
           <li className="cursor-pointer" onClick={handleLangToggle}>
             {languageTitle ? "தமிழ்" : "English"}

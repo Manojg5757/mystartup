@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { soapOffer } from "../details";
 import offerslide from "../assets/offerslide.png";
-
+import drop from "../assets/drop.png"
 
 const Offer = () => {
  
   return (
-    <div>
-      {/* <div>
-        <img className="h-[50vh] object-cover sm:h-auto" src={offerslide} alt="" />
-     </div> */}
-    
+    <div className="h-[100vh] mt-[150px]">
+      <img className="mt-7" src={drop} alt="" />
+    <h1 className="text-3xl text-center font-bold">The Drop Is Coming Soon</h1>
      
     </div>
   );
