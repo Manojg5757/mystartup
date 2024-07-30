@@ -14,7 +14,7 @@ const Footer = () => {
        </div>
       </div>
       <div className='text-center'>
-        <p>@All rights Reserved By RootC</p>
+        <p>@All rights Reserved By BrootC</p>
       </div>
     </footer>
   )

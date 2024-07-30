@@ -39,16 +39,17 @@ import mayagreen from "./assets/mayagreen.png";
 import mayablue from "./assets/mayablue.png";
 import arisi from "./assets/arisi.png";
 import arasan from "./assets/arasan.png";
-import lifebuoy from './assets/lifebuoy.png'
-import hamam from './assets/hamam.png'
-import surfexcel from './assets/surfexcel.png'
-import cinthol from './assets/cinthol.png'
-import moong from './assets/moong.png'
-import pottukadalai from './assets/pottukadalai.png'
-import groundnut from './assets/groundnut.png'
-import eggbasket from './assets/eggbasket.png'
-import tea from './assets/tea.png'
-import brownsugar from './assets/brownsugar.png'
+import lifebuoy from "./assets/lifebuoy.png";
+import hamam from "./assets/hamam.png";
+import surfexcel from "./assets/surfexcel.png";
+import cinthol from "./assets/cinthol.png";
+import moong from "./assets/moong.png";
+import pottukadalai from "./assets/pottukadalai.png";
+import groundnut from "./assets/groundnut.png";
+import eggbasket from "./assets/eggbasket.png";
+import tea from "./assets/tea.png";
+import brownsugar from "./assets/brownsugar.png";
+import turmericdarling from './assets/turmericdarling.png'
 
 const sliderDetails = [
   {
@@ -80,7 +81,7 @@ export const products = [
     offerPrice: 25,
     category: "soap",
     image: arasan,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 2,
@@ -93,7 +94,7 @@ export const products = [
     offerPrice: null,
     category: "soap",
     image: mayablue,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 3,
@@ -106,7 +107,7 @@ export const products = [
     offerPrice: null,
     category: "soap",
     image: vim,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 4,
@@ -119,7 +120,7 @@ export const products = [
     offerPrice: null,
     category: "soap",
     image: mayagreen,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 5,
@@ -132,7 +133,7 @@ export const products = [
     offerPrice: null,
     category: "detergent",
     image: ponvanduDetergent,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 6,
@@ -145,7 +146,7 @@ export const products = [
     offerPrice: null,
     category: "flour",
     image: sambaravai,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 7,
@@ -158,7 +159,7 @@ export const products = [
     offerPrice: null,
     category: "flour",
     image: sambaravai,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 8,
@@ -171,7 +172,7 @@ export const products = [
     offerPrice: null,
     category: "flour",
     image: kadalaimaavu,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 9,
@@ -184,7 +185,7 @@ export const products = [
     offerPrice: null,
     category: "flour",
     image: wheatflour,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 10,
@@ -197,7 +198,7 @@ export const products = [
     offerPrice: null,
     category: "flour",
     image: bajjimaavu,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 11,
@@ -210,7 +211,7 @@ export const products = [
     offerPrice: null,
     category: "flour",
     image: maidha,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 12,
@@ -223,7 +224,7 @@ export const products = [
     offerPrice: null,
     category: "masala",
     image: turmeric,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 13,
@@ -236,7 +237,7 @@ export const products = [
     offerPrice: null,
     category: "masala",
     image: turmeric,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 14,
@@ -249,7 +250,7 @@ export const products = [
     offerPrice: 20,
     category: "masala",
     image: chillidarling,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 15,
@@ -262,7 +263,7 @@ export const products = [
     offerPrice: 24,
     category: "masala",
     image: chillipowder,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 16,
@@ -275,7 +276,7 @@ export const products = [
     offerPrice: 13,
     category: "masala",
     image: corianderdarling,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 17,
@@ -288,7 +289,7 @@ export const products = [
     offerPrice: null,
     category: "masala",
     image: coriander,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 18,
@@ -300,8 +301,8 @@ export const products = [
     regularPrice: 20,
     offerPrice: 19,
     category: "masala",
-    image: sambar,
-    weightType:"gram"
+    image: sambardarling,
+    weightType: "gram",
   },
   {
     id: 19,
@@ -314,7 +315,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: mustard,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 20,
@@ -327,7 +328,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: vendhayam,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 21,
@@ -340,7 +341,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: pepper,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 22,
@@ -353,7 +354,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: puli,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 23,
@@ -366,7 +367,7 @@ export const products = [
     offerPrice: 17,
     category: "tea",
     image: threerosesbig,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 24,
@@ -379,7 +380,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: goldwinner5,
-    weightType:"Litre"
+    weightType: "Litre",
   },
   {
     id: 25,
@@ -392,7 +393,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: goldwinner1,
-    weightType:"Litre"
+    weightType: "Litre",
   },
   {
     id: 26,
@@ -405,7 +406,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: eggs,
-    weightType:"count"
+    weightType: "count",
   },
   {
     id: 27,
@@ -418,7 +419,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: malli,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 28,
@@ -431,7 +432,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: chickpeas,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 29,
@@ -444,7 +445,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: chickpeas,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 30,
@@ -457,7 +458,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: chickpeas,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 31,
@@ -470,7 +471,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: redchilli,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 32,
@@ -483,7 +484,7 @@ export const products = [
     offerPrice: 17,
     category: "essentials",
     image: arisi,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 33,
@@ -496,7 +497,7 @@ export const products = [
     offerPrice: 43,
     category: "stationary",
     image: stationary,
-    weightType:null
+    weightType: null,
   },
   {
     id: 34,
@@ -509,7 +510,7 @@ export const products = [
     offerPrice: 43,
     category: "stationary",
     image: stumperball,
-    weightType:null
+    weightType: null,
   },
   {
     id: 35,
@@ -522,118 +523,129 @@ export const products = [
     offerPrice: 145,
     category: "snacks",
     image: mixturesnacks,
-    weightType:"kg"
+    weightType: "kg",
   },
 ];
 
 export const soapOffer = [
-    {
-        id: 1,
-        title: "Arasan Soap",
-        titleTamil: "அரசன் சோப்பு",
-        brand: "Arasan",
-        weight: 250,
-        mrp: 26.5,
-        regularPrice: 26,
-        offerPrice: 24,
-        category: "soap",
-        image: arasan,
-        weightType:"gram"
-      },
-      {
-        id: 2,
-        title: "Maya Soap",
-        titleTamil: "மாயா சோப்பு",
-        brand: "Maya",
-        weight: 220,
-        mrp: 10,
-        regularPrice: null,
-        offerPrice: null,
-        category: "soap",
-        image: mayablue,
-        weightType:"gram"
-      },
-      {
-        id: 3,
-        title: "Vim Bar",
-        titleTamil: "விம் சோப்பு",
-        brand: "Vim",
-        weight: 135,
-        mrp: 10,
-        regularPrice: null,
-        offerPrice: null,
-        category: "soap",
-        image: vim,
-        weightType:"gram"
-      },
-      {
-        id: 4,
-        title: "Maya Soap",
-        titleTamil: "மாயா சோப்பு",
-        brand: "Maya",
-        weight: 155,
-        mrp: 10,
-        regularPrice: null,
-        offerPrice: null,
-        category: "soap",
-        image: mayagreen,
-        weightType:"gram"
-      },
-      {
-        id: 5,
-        title: "SurfExcel",
-        titleTamil: "சர்ப் எக்சல்",
-        brand: "Surfexcel",
-        weight: null,
-        mrp: 35,
-        regularPrice: null,
-        offerPrice: 34,
-        category: "soap",
-        image: surfexcel,
-        weightType:"gram"
-      },  
-      {
-        id: 6,
-        title: "LifeBuoy",
-        titleTamil: "லைஃபாய்",
-        brand: "Lifebuoy",
-        weight: null,
-        mrp: 36,
-        regularPrice: null,
-        offerPrice: 35,
-        category: "soap",
-        image: lifebuoy,
-        weightType:"gram"
-      },  
-      {
-        id: 7,
-        title: "Hamam",
-        titleTamil: "ஹமாம்",
-        brand: "Hamam",
-        weight: null,
-        mrp: 36,
-        regularPrice: null,
-        offerPrice: 35,
-        category: "soap",
-        image: hamam,
-        weightType:"gram"
-      }, 
-      {
-        id: 8,
-        title: "Cinthol",
-        titleTamil: "சின்தால்",
-        brand: "Cinthol",
-        weight: null,
-        mrp: 48,
-        regularPrice: null,
-        offerPrice: 47,
-        category: "soap",
-        image: cinthol,
-        weightType:"gram"
-      },  
-
-    
-]
+  {
+    id: 1,
+    title: "Arasan Soap",
+    titleTamil: "அரசன் சோப்பு",
+    brand: "Arasan",
+    weight: 250,
+    mrp: 26.5,
+    regularPrice: 26,
+    offerPrice: 24,
+    category: "soap",
+    image: arasan,
+    weightType: "gram",
+  },
+  {
+    id: 2,
+    title: "Maya Soap",
+    titleTamil: "மாயா சோப்பு",
+    brand: "Maya",
+    weight: 220,
+    mrp: 10,
+    regularPrice: null,
+    offerPrice: null,
+    category: "soap",
+    image: mayablue,
+    weightType: "gram",
+  },
+  {
+    id: 3,
+    title: "Vim Bar",
+    titleTamil: "விம் சோப்பு",
+    brand: "Vim",
+    weight: 135,
+    mrp: 10,
+    regularPrice: null,
+    offerPrice: null,
+    category: "soap",
+    image: vim,
+    weightType: "gram",
+  },
+  {
+    id: 4,
+    title: "Maya Soap",
+    titleTamil: "மாயா சோப்பு",
+    brand: "Maya",
+    weight: 155,
+    mrp: 10,
+    regularPrice: null,
+    offerPrice: null,
+    category: "soap",
+    image: mayagreen,
+    weightType: "gram",
+  },
+  {
+    id: 5,
+    title: "SurfExcel",
+    titleTamil: "சர்ப் எக்சல்",
+    brand: "Surfexcel",
+    weight: null,
+    mrp: 35,
+    regularPrice: null,
+    offerPrice: 34,
+    category: "soap",
+    image: surfexcel,
+    weightType: "gram",
+  },
+  {
+    id: 6,
+    title: "LifeBuoy",
+    titleTamil: "லைஃபாய்",
+    brand: "Lifebuoy",
+    weight: null,
+    mrp: 36,
+    regularPrice: null,
+    offerPrice: 35,
+    category: "soap",
+    image: lifebuoy,
+    weightType: "gram",
+  },
+  {
+    id: 7,
+    title: "Hamam",
+    titleTamil: "ஹமாம்",
+    brand: "Hamam",
+    weight: null,
+    mrp: 36,
+    regularPrice: null,
+    offerPrice: 35,
+    category: "soap",
+    image: hamam,
+    weightType: "gram",
+  },
+  {
+    id: 8,
+    title: "Cinthol",
+    titleTamil: "சின்தால்",
+    brand: "Cinthol",
+    weight: null,
+    mrp: 48,
+    regularPrice: null,
+    offerPrice: 47,
+    category: "soap",
+    image: cinthol,
+    weightType: "gram",
+  },
+  {
+    id: 9,
+    title: "Ponvandu Detergent Powder",
+    titleTamil: "பொன்வண்டு ",
+    brand: "Ponvandu",
+    weight: 500,
+    mrp: 48,
+    regularPrice: null,
+    offerPrice: 45,
+    category: "detergent",
+    image: ponvanduDetergent,
+    weightType: "gram",
+  },
+];
 
 export const essentialOffers = [
   {
@@ -647,8 +659,8 @@ export const essentialOffers = [
     offerPrice: 135,
     category: "flour",
     image: sambaravai,
-    weightType:"kg"
-  },  
+    weightType: "kg",
+  },
   {
     id: 2,
     title: "Wheat Flour",
@@ -660,20 +672,20 @@ export const essentialOffers = [
     offerPrice: null,
     category: "flour",
     image: wheatflour,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 3,
     title: "Paasi payaru",
     titleTamil: "பாசிப்பயிறு",
-    brand: "parrupu", 
+    brand: "parrupu",
     weight: 1,
     mrp: null,
     regularPrice: 150,
     offerPrice: 135,
     category: "essentials",
     image: moong,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 4,
@@ -683,10 +695,10 @@ export const essentialOffers = [
     weight: 1,
     mrp: null,
     regularPrice: 35,
-    offerPrice: null,
+    offerPrice: 130,
     category: "essentials",
     image: pottukadalai,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 5,
@@ -695,11 +707,11 @@ export const essentialOffers = [
     brand: "parrupu",
     weight: 1,
     mrp: null,
-    regularPrice:200,
+    regularPrice: 200,
     offerPrice: 185,
-    category: "essentials", 
+    category: "essentials",
     image: groundnut,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 6,
@@ -708,11 +720,11 @@ export const essentialOffers = [
     brand: "P.S",
     weight: 250,
     mrp: null,
-    regularPrice:200,
+    regularPrice: 200,
     offerPrice: 190,
-    category: "essentials", 
+    category: "essentials",
     image: malli,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 7,
@@ -725,7 +737,7 @@ export const essentialOffers = [
     offerPrice: 15,
     category: "essentials",
     image: mustard,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 8,
@@ -738,7 +750,7 @@ export const essentialOffers = [
     offerPrice: 15,
     category: "essentials",
     image: vendhayam,
-    weightType:"gram"
+    weightType: "gram",
   },
   {
     id: 9,
@@ -751,7 +763,7 @@ export const essentialOffers = [
     offerPrice: 6,
     category: "essentials",
     image: eggbasket,
-    weightType:"count"
+    weightType: "count",
   },
   {
     id: 10,
@@ -764,7 +776,7 @@ export const essentialOffers = [
     offerPrice: 690,
     category: "essentials",
     image: tea,
-    weightType:"kg"
+    weightType: "kg",
   },
   {
     id: 11,
@@ -777,8 +789,103 @@ export const essentialOffers = [
     offerPrice: 65,
     category: "essentials",
     image: brownsugar,
-    weightType:"kg"
+    weightType: "kg",
   },
-]
+];
+
+export const masalaOffer = [
+  {
+    id: 1,
+    title: "Darling Turmeric Powder",
+    titleTamil: "டார்லிங் மஞ்சள் தூள்",
+    weight: 50,
+    brand: "Darling",
+    mrp: 17,
+    regularPrice: 17,
+    offerPrice: 14,
+    category: "masala",
+    image: turmericdarling,
+    weightType: "gram",
+  },
+  {
+    id: 2,
+    title: "sakthi Turmeric Powder",
+    titleTamil: "மஞ்சள் தூள்",
+    weight: 50,
+    brand: "Sakthi",
+    mrp: 21.5,
+    regularPrice: 15,
+    offerPrice: 15,
+    category: "masala",
+    image: turmeric,
+    weightType: "gram",
+  },
+  {
+    id: 3,
+    title: "Darling Chilli Powder",
+    titleTamil: "டார்லிங் மிளகாய் தூள்",
+    weight: 50,
+    brand: "Darling",
+    mrp: 37,
+    regularPrice: 25,
+    offerPrice: 20,
+    category: "masala",
+    image: chillidarling,
+    weightType: "gram",
+  },
+  {
+    id: 4,
+    title: "Sakthi Chilli Powder",
+    titleTamil: "மிளகாய் தூள்",
+    weight: 50,
+    brand: "Sakthi",
+    mrp: 37,
+    regularPrice: 25,
+    offerPrice: 24,
+    category: "masala",
+    image: chillipowder,
+    weightType: "gram",
+  },
+  {
+    id: 5,
+    title: "Darling Coriander Powder",
+    titleTamil: "டார்லிங் மல்லி தூள்",
+    weight: 50,
+    brand: "Darling",
+    mrp: 18,
+    regularPrice: 15,
+    offerPrice: 13,
+    category: "masala",
+    image: corianderdarling,
+    weightType: "gram",
+  },
+  {
+    id: 6,
+    title: "Sakthi Coriander Powder",
+    titleTamil: "மல்லி தூள்",
+    weight: 50,
+    brand: "Sakthi",
+    mrp: 16,
+    regularPrice: 15,
+    offerPrice: null,
+    category: "masala",
+    image: coriander,
+    weightType: "gram",
+  },
+  {
+    id: 7,
+    title: "Darling Smabar Powder",
+    titleTamil: "டார்லிங் சாம்பார் தூள்",
+    weight: 50,
+    brand: "Darling",
+    mrp: 29,
+    regularPrice: 20,
+    offerPrice: 19,
+    category: "masala",
+    image: sambardarling,
+    weightType: "gram",
+  },
+ 
+];
 
 export default sliderDetails;
