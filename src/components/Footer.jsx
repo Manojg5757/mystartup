@@ -13,6 +13,9 @@ const Footer = () => {
         
        </div>
       </div>
+      <div className='my-4'>
+        <p className='text-center'>There is no buying option here,you can checkout the prices and buy from our physical store. But all the options will be dropped soon</p>
+      </div>
       <div className='text-center'>
         <p>@All rights Reserved By BrootC</p>
       </div>

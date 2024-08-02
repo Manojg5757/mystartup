@@ -71,7 +71,7 @@ const Slider = () => {
     }, []);
   return (
     <div className="relative">
-    <div className="absolute hidden sm:flex z-40 w-full h-full  justify-between items-center">
+    <div className="absolute hidden sm:flex z-10 w-full h-full  justify-between items-center">
       <FaArrowLeft
         onClick={prevSlide}
         className="bg-white rounded-lg sm:text-xl cursor-pointer"
