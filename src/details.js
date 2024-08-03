@@ -372,7 +372,7 @@ export const products = [
   {
     id: 24,
     title: "5 Litre Gold Winner Oil",
-    titleTamil: "5 லிட்டர் கோல்ட் வின்னர்",
+    titleTamil: "5லி கோல்ட் வின்னர்",
     weight: 5,
     brand: "Gold Winner",
     mrp: 25,
@@ -385,7 +385,7 @@ export const products = [
   {
     id: 25,
     title: "1ltr Gold winner",
-    titleTamil: "1 லிட்டர் கோல்ட் வின்னர்",
+    titleTamil: "1லி கோல்ட் வின்னர்",
     weight: 1,
     brand: "Gold Winner",
     mrp: 25,

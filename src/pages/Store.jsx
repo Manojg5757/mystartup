@@ -6,7 +6,7 @@ const Store = () => {
   const toggle = useSelector((state) => state.product);
   console.log(toggle);
   return (
-    <div className="max-w-6xl mx-auto relative">
+    <div className="max-w-6xl mx-auto relative ">
       <div>
         <h1 className="text-center my-7 text-lg font-semibold underline text-blue-400 sm:text-3xl">
           {toggle ? "Welcome to the Store" : "கடையை சுற்றிப் பாருங்கள்"}
