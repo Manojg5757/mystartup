@@ -14,9 +14,9 @@ const Store = () => {
         <div className="flex flex-wrap gap-4 justify-center">
           {products.map((product) => {
             return (
-              <div key={product.id} className="shadow-lg rounded-lg p-3">
+              <div key={product.id} className="shadow-lg rounded-lg sm:p-3">
                 <img
-                  className="h-[200px] rounded-lg"
+                  className="h-[180px] sm:h-[200px] rounded-lg"
                   src={product.image}
                   alt=""
                 />

@@ -23,7 +23,7 @@ const MoveToTop = () => {
     }
   return (
     <div className={`fixed bottom-3 right-2 ${isVisible ? 'opacity-100' : 'opacity-0'} cursor-pointer`}>
-       <FaArrowCircleUp className='text-lg sm:text-2xl text-blue-500' onClick={scrollToTop} />
+       <FaArrowCircleUp className='text-3xl sm:text-2xl text-blue-500' onClick={scrollToTop} />
     </div>
   )
 }
