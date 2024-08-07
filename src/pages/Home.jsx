@@ -25,13 +25,16 @@ const Home = () => {
       
 
       <div className="max-w-6xl mx-auto p-3  ">
-        <div className="flex gap-4 justify-center">
+        <div className="flex flex-col gap-2 items-center w-full">
+          <h1>{toggle ? "Share" : "பகிருங்கள்"}</h1>
+        <div className="flex gap-4">
         <WhatsappShareButton url={shareUrl}>
              <WhatsappIcon size={40} className="rounded-full" />
         </WhatsappShareButton>
         <FacebookShareButton url={shareUrl}>
           <FacebookIcon size={40} className="rounded-full" />
         </FacebookShareButton>
+        </div>
         </div>
          <h1 className="text-center mb-4 text-lg font-semibold text-blue-600">{toggle ? "Best Deals for You" : "சிறந்த சலுகைகள்"}</h1>
          <h1 className="my-4 font-semibold">{toggle ? "Kitchen Essentials" : "சமையல் அறை"}</h1>
