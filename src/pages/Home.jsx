@@ -8,7 +8,7 @@ import { GiShoppingCart } from "react-icons/gi";
 import sliderDetails, { essentialOffers, masalaOffer, soapOffer } from "../details";
 import { useSelector } from "react-redux";
 import videoad from '../assets/videoad.mp4'
-import { WhatsappShareButton,WhatsappIcon } from 'react-share'
+import { WhatsappShareButton,WhatsappIcon, FacebookShareButton, FacebookIcon, InstapaperShareButton, InstapaperIcon } from 'react-share'
 
 
 const Home = () => {
@@ -25,9 +25,14 @@ const Home = () => {
       
 
       <div className="max-w-6xl mx-auto p-3  ">
+        <div className="flex gap-4 justify-center">
         <WhatsappShareButton url={shareUrl}>
-             <WhatsappIcon size={40} />
+             <WhatsappIcon size={40} className="rounded-full" />
         </WhatsappShareButton>
+        <FacebookShareButton url={shareUrl}>
+          <FacebookIcon size={40} className="rounded-full" />
+        </FacebookShareButton>
+        </div>
          <h1 className="text-center mb-4 text-lg font-semibold text-blue-600">{toggle ? "Best Deals for You" : "சிறந்த சலுகைகள்"}</h1>
          <h1 className="my-4 font-semibold">{toggle ? "Kitchen Essentials" : "சமையல் அறை"}</h1>
         <div className="flex flex-wrap gap-2 justify-center">
