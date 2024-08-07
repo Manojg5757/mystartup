@@ -8,10 +8,12 @@ import { GiShoppingCart } from "react-icons/gi";
 import sliderDetails, { essentialOffers, masalaOffer, soapOffer } from "../details";
 import { useSelector } from "react-redux";
 import videoad from '../assets/videoad.mp4'
+import { WhatsappShareButton,WhatsappIcon } from 'react-share'
 
 
 const Home = () => {
   const toggle = useSelector((state) => state.product);
+  const shareUrl = "https://mystartup.onrender.com/"
   
   return (
     <div>
@@ -23,6 +25,9 @@ const Home = () => {
       
 
       <div className="max-w-6xl mx-auto p-3  ">
+        <WhatsappShareButton url={shareUrl}>
+             <WhatsappIcon size={40} />
+        </WhatsappShareButton>
          <h1 className="text-center mb-4 text-lg font-semibold text-blue-600">{toggle ? "Best Deals for You" : "சிறந்த சலுகைகள்"}</h1>
          <h1 className="my-4 font-semibold">{toggle ? "Kitchen Essentials" : "சமையல் அறை"}</h1>
         <div className="flex flex-wrap gap-2 justify-center">
